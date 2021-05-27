@@ -40,18 +40,15 @@ const loadingTask = pdfjsLib.getDocument({
   //  cMapPacked: CMAP_PACKED,
 });
 
-window.addEventListener('resize', function(event){console.log(event)})
+
+window.onfullscreenchange = window.onresize
+
 
 window.onresize  = ( () => {
   setTimeout(() => {
-    console.log("resize")
     var w = document.documentElement.clientWidth;
       var h = document.documentElement.clientHeight;
-      console.log("h "+ h +  " w " +w)
-      console.log("h "+ window.innerHeight +  " w " +window.innerWidth)
     clean();
-    console.log(currentPage)
-    console.log(height)
     drawpdf(currentPage)
       
   }, 0);
@@ -66,7 +63,6 @@ function clean() {
 
 
 function drawpdf(page){
-  console.log(render)
   let scale = render.boundsRect.height / height
 
   for (let i = page; i < page + 4; i++) {
@@ -115,8 +111,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const width = (pdfPage._pageInfo.view[2] - pdfPage._pageInfo.view[0]) * CSS_UNITS
       height = (pdfPage._pageInfo.view[3] - pdfPage._pageInfo.view[1]) * CSS_UNITS
-      console.log(document.documentElement.clientWidth * height / width);
-      console.log(document.documentElement.clientHeight * width / height);
 
       const pageFlip = new St.PageFlip(document.getElementById('book'), {
         width: width, // base page width
@@ -124,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         size: "stretch",
         // set threshold values:
-        minWidth: 900,
+        minWidth: 769,
         maxWidth: document.documentElement.clientHeight * width / height,
         minHeight: 600,
         maxHeight:document.documentElement.clientHeight / height * width,
