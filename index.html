@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Demo pdf flip</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.8.335/pdf_viewer.min.css" integrity="sha512-LkJXOeBvZ1jlYJlfN1lYUDLk930TUOdRDz2sfCS5alKTbuSUyqn/E9r5QVH+asjOcLyAom8pvEZRcD/YG3J+Hg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./src/css/main.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #808080;
+      margin: 0;
+      padding: 0;
+    }
+    #viewerContainer {
+      overflow: auto;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+     
+    }
+    #viewerContainer1 {
+      overflow: auto;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      visibility: hidden;
+    }
+    #pageContainer {
+      overflow: auto;
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-md-10 mx-auto">
+      <div id="book" class="flip-book justify-content-center">
+      
+      </div>
+        </div>
+  </div>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.js" integrity="sha256-u6ygu+9Xoiu2aj/GnWe6+aF/uanInsntNeK5Gr5L0ec=" crossorigin="anonymous"></script>
+<!--  <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.module.js" integrity="sha256-txj6r8poVr/1Fim67e/2AeLMWUgulREFvb1uRpeMyjg=" crossorigin="anonymous"></script>-->
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+      integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.8.335/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.8.335/pdf.worker.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.8.335/pdf_viewer.js" integrity="sha512-O6aDht9IROQup2Ag1xf8F87x34eEzI5ZjNRvt8qx/itgTuAj2Bu41kZafLn/RAnH6fK7AfAFCrcAbjSqXUSQyQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <script type="module" src="./src/js/main.js"></script>
+</body>
+
+</html>
