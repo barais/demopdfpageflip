@@ -2,7 +2,7 @@
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
   display: none;
   background-size: cover;
-  background-image: url("/src/img/background.jpg");
+  background-image: url("../img/background.jpg");
 }
 
 .mypage {
