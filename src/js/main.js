@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         size: "stretch",
         // set threshold values:
-        minWidth: 315,
+        minWidth: 900,
         maxWidth: document.documentElement.clientHeight * width / height,
         minHeight: 600,
         maxHeight:document.documentElement.clientHeight / height * width,
