@@ -7,7 +7,7 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdn.jsdelivr.net/npm/pdfjs-dis
 'use strict';
 
 
-const DEFAULT_URL = "/src/img/file.pdf";
+const DEFAULT_URL = "src/img/file.pdf";
 // To test the AcroForm and/or scripting functionality, try e.g. this file:
 // var DEFAULT_URL = "../../test/pdfs/160F-2019.pdf";
 
